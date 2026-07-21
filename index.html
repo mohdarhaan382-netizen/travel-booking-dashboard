@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Explore The World With TravelGo
+        </h1>
+
+        <p>
+            Discover amazing destinations, book flights,
+            hotels and create unforgettable memories.
+        </p>
+
+        <button class="explore-btn">
+            Explore Now
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- Booking Search -->
+
+<section class="booking-box">
+
+<h2>Find Your Perfect Trip</h2>
+
+<div class="booking-form">
+
+<input type="text" placeholder="From">
+
+<input type="text" placeholder="Destination">
+
+<input type="date">
+
+<select>
+<option>1 Traveler</option>
+<option>2 Travelers</option>
+<option>3 Travelers</option>
+<option>Family</option>
+</select>
+
+<button>
+Search Trip
+</button>
+
+</div>
+
+</section>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2><i class="fa-solid fa-plane"></i> TravelGo</h2>
+
+        <ul>
+            
+<ul>
+
+<li class="active" data-page="dashboard">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li data-page="bookings">
+<i class="fa-solid fa-ticket"></i>
+Bookings
+</li>
+
+<li data-page="destinations">
+<i class="fa-solid fa-earth-americas"></i>
+Destinations
+</li>
+
+<li data-page="payments">
+<i class="fa-solid fa-wallet"></i>
+Payments
+</li>
+
+<li data-page="profile">
+<i class="fa-solid fa-user"></i>
+Profile
+</li>
+
+<li data-page="settings">
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
+
+</ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div id="pageContent"></div>
+
+        <!-- Header -->
+        <header>
+
+            <div>
+                <h1>Travel Booking Dashboard</h1>
+                <p>Plan your dream vacation easily.</p>
+            </div>
+
+            <div class="header-right">
+
+                <button id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <img src="https://i.pravatar.cc/50" class="profile">
+
+            </div>
+
+        </header>
+
+        <!-- Search -->
+        <section class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search Destination...">
+
+            <button>
+                Search
+            </button>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-plane"></i>
+
+                <h3 id="bookingCount">245</h3>
+
+                <p>Total Bookings</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>35</h3>
+
+                <p>Destinations</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>780</h3>
+
+                <p>Customers</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h3>$24K</h3>
+
+                <p>Revenue</p>
+
+            </div>
+
+        </section>
+
+        <!-- Destinations -->
+        <h2 class="title">
+            Popular Destinations
+        </h2>
+
+        <section class="destinations">
+
+            <div class="place">
+
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500">
+
+                <h3>Paris</h3>
+
+                <p>$900</p>
+
+                <button class="bookBtn">
+                    Book Now
+                </button>
+
+            </div>
+
+            <div class="place">
+
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500">
+
+                <h3>Dubai</h3>
+
+                <p>$1200</p>
+
+                <button class="bookBtn">
+                    Book Now
+                </button>
+
+            </div>
+
+            <div class="place">
+
+                <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500">
+
+                <h3>Bali</h3>
+
+                <p>$850</p>
+
+                <button class="bookBtn">
+                    Book Now
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Booking History -->
+        <h2 class="title">
+            Recent Bookings
+        </h2>
+
+        <table>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Destination</th>
+
+                <th>Date</th>
+
+                <th>Status</th>
+
+            </tr>
+
+            <tr>
+
+                <td>#1001</td>
+
+                <td>Paris</td>
+
+                <td>12 Aug 2026</td>
+
+                <td class="green">Confirmed</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1002</td>
+
+                <td>Dubai</td>
+
+                <td>18 Aug 2026</td>
+
+                <td class="orange">Pending</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1003</td>
+
+                <td>Bali</td>
+
+                <td>22 Aug 2026</td>
+
+                <td class="green">Confirmed</td>
+
+            </tr>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
